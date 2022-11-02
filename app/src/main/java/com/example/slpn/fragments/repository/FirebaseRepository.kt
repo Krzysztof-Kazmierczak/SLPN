@@ -31,4 +31,10 @@ class FirebaseRepository {
             }
         return cloudResult
     }
+    //Funkcja tworząca nowego użytkownika
+    fun createNewUser(user: User) {
+        cloud.collection("user")
+            .document(user.uid!!)
+            .set(user)
+    }
 }
