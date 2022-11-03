@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">SLPN</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Network"><b>Brak połączenia z internetem</b></string>
+    <!-- Login & Register Fragment. -->
+    <string name="Logowanie">LOGOWANIE</string>
+    <string name="Rejestracja">Stwórz konto</string>
+    <string name="Login">LOGIN</string>
+    <string name="Hasło">HASŁO</string>
+    <string name="Zarejestruj">Zarejestruj mnie!</string>
+    <string name="W_Maila">Wpisz e-mail</string>
+    <string name="W_Haslo">Wpisz hasło</string>
+    <string name="W_Tel">Wpisz numer telefonu</string>
+    <string name="Zaloguj">Zaloguj się</string>
+    <string name="PWH_Haslo">Powtórz hasło</string>
+
 </resources>
