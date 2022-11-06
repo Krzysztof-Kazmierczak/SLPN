@@ -31,6 +31,19 @@ class FirebaseRepository {
             }
         return cloudResult
     }
+    //Funkcja aktualizujaca token użytkownika
+    fun pushToken(token: String) {
+        val uid = auth.currentUser?.uid
+        cloud.collection("user")
+            .document(uid!!)
+            .update("token",token)
+            .addOnSuccessListener {
+                Log.d("Zaktualzowano token ", token)
+            }
+            .addOnFailureListener {
+                Log.d(REPO_DEBUG,it.message.toString())
+            }
+    }
     //Funkcja tworząca nowego użytkownika
     fun createNewUser(user: User) {
         cloud.collection("user")

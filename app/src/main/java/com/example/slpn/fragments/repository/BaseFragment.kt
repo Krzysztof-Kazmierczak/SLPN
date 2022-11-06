@@ -36,7 +36,7 @@ abstract class BaseFragment: Fragment() {
                     // Log and toast
                     token?.let { Log.d("moj token ", it) }
                     //Aktualizacja tokena
-                   //todo repository.pushToken(token.toString())
+                    repository.pushToken(token.toString())
                 }
             })
     }
