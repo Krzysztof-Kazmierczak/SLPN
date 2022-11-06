@@ -1,4 +1,4 @@
-package com.example.slpn.firebase
+package com.example.slpn.fragments.firebase
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
