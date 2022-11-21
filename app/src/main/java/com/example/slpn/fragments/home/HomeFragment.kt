@@ -12,13 +12,14 @@ import com.example.inzynierka.firebase.NotificationData
 import com.example.inzynierka.firebase.PushNotification
 import com.example.slpn.R
 import com.example.slpn.firebase.RetrofitInstance
+import com.example.slpn.fragments.repository.BaseFragment
 import com.google.firebase.messaging.FirebaseMessaging
 import com.google.gson.Gson
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class HomeFragment : Fragment() {
+class HomeFragment : BaseFragment() {
 
     companion object {
         fun newInstance() = HomeFragment()
